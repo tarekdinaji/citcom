@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :complains
 
+  enum user_type: { annonymous: 0, citizen: 1, admin: 2 }
 end
